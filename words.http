@@ -1,0 +1,42 @@
+@url=http://localhost:5000
+
+@apiToken=__12345__
+###
+
+GET {{url}}/api/Profanity
+Authorization: {{apiToken}}
+
+
+###
+
+POST {{url}}/api/profanity/filter/default/isClean
+Authorization: {{apiToken}}
+Content-Type: application/json
+
+{ "comment": "This is a test" }
+
+###
+
+POST {{url}}/api/profanity/filter/default/isClean
+Authorization: {{apiToken}}
+Content-Type: application/json
+
+{ "comment": "This is a crappy day" }
+
+###
+
+POST {{url}}/api/profanity/filter/default/findDirty
+Authorization: {{apiToken}}
+Content-Type: application/json
+
+{ "comment": "This is a crappy day" }
+
+
+###
+
+
+POST {{url}}/api/profanity/filter/default/findDirty
+Authorization: {{apiToken}}
+Content-Type: application/json
+
+{ "comment": "This is a cr@ppy day" }
