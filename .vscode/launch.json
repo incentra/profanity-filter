@@ -18,7 +18,8 @@
                 "pattern": "^\\s*Now listening on:\\s+(https?://\\S+)"
             },
             "env": {
-                "ASPNETCORE_ENVIRONMENT": "Development"
+                "ASPNETCORE_ENVIRONMENT": "Development",
+                "API_TOKEN": "__12345__",
             },
             "envFile": "${workspaceFolder}/.env",
             "sourceFileMap": {
