@@ -9,7 +9,7 @@
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
-            "program": "${workspaceFolder}/bin/Debug/netcoreapp3.1/sp-api-profanity-filter.dll",
+            "program": "${workspaceFolder}/sp-api-profanity-filter/bin/Debug/netcoreapp3.1/sp-api-profanity-filter.dll",
             "args": [],
             "cwd": "${workspaceFolder}",
             "stopAtEntry": false,
@@ -20,6 +20,7 @@
             "env": {
                 "ASPNETCORE_ENVIRONMENT": "Development"
             },
+            "envFile": "${workspaceFolder}/.env",
             "sourceFileMap": {
                 "/Views": "${workspaceFolder}/Views"
             }
